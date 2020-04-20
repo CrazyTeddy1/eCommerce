@@ -1,0 +1,6 @@
+{% load static %}
+{{ object.title }} <br/>
+{{ object.description }} <br/>
+{{ object.image.url }}<br/>
+
+<img src="{% static '{{ object.image.url }}' %}" alt='xyz'>
